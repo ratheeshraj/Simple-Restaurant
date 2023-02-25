@@ -1,0 +1,156 @@
+:root{
+    --blue : #24c0c0;
+    --white:whitesmoke;
+    --red:crimson;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../img/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--blue);
+    min-width: 120px;
+   
+}
+
+header{
+    display: flex;
+    padding: 1em;
+   flex-wrap: wrap;
+}
+#logo{
+    flex: 3;
+    font-size: 1.2em;
+    min-width: 260px;
+}
+nav{
+  
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--red);
+}
+header nav a i{
+    margin-right:.5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.tagline2{
+    font-style: italic;
+    font-weight: bolder;
+    color: var(--red);
+    font-size :2rem;
+}
+.tagline2 span{
+background-color: var(--white);
+margin:-0.1em;
+}
+.maintext div{
+    margin: .75em;
+}
+.maintext button{
+
+    width: auto;
+    margin-top: 2em;
+    margin-left: 1em;
+    border-radius: 20px;
+    padding: .7em;
+    background-color: blanchedalmond;
+    font-style: italic;
+    animation-name: button;
+    font-size: .9em;
+    font-weight: bold;
+    position: relative;
+    transition-duration: 1s;
+
+}
+.button:hover{
+    cursor: pointer;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right, gray,black);
+    color: var(--white);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+#menuheading, #locheading{
+    display: grid;
+    background: linear-gradient(to right, gray,black);
+    color: var(--red);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: yellowgreen;
+    font-size: 1.2em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.locations{
+    background: linear-gradient(to right, gray,black);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.locations h2{
+    color:greenyellow;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.756);
+    color: var(--white);
+    font-size: .8em;
+    padding: 0.25em,1em;
+}
+
+
